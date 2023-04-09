@@ -49,11 +49,11 @@ export function meta() {
 }
 
 // Configure headers from the home page (app/routes/__marketing/index.jsx)
-// export function headers({ parentHeaders }) {
-//   return {
-//     'Cache-Control': parentHeaders.get('Cache-Control'), // 1 hour
-//   }
-// }
+export function headers({ parentHeaders }) {
+  return {
+    'Cache-Control': parentHeaders.get('Cache-Control'), // 1 hour
+  }
+}
 
 // Disable javascript for this page
 export const handle = { disableJS: true }
